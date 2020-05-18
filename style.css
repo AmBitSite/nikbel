@@ -4,6 +4,10 @@ body{
     color: #cccbcb;
     font-size: 18px;
     transition: .3s;
+    font-family:sans-serif ;
+}
+a{
+    text-decoration: none;
 }
 .nav{
     display: flex;
