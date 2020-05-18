@@ -1,0 +1,29 @@
+@media (max-width:1300px){
+    .section{
+        width:90%;
+    }
+    .nav-wrap{
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+}
+@media(max-width:1000px){
+    .catalog-card{
+        width: 100%;
+        height: 300px;
+    }
+}
+@media(max-width:850px){
+    .nav-wrap{
+        display: none;
+    }
+}
+@media(max-width:550px){
+    .header-discription{
+        font-size: 14px;
+    }
+    .catalog-card{
+        width: 100%;
+        height: 200px;
+    }
+}
