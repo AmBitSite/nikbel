@@ -14,6 +14,12 @@
     }
 }
 @media(max-width:850px){
+    .header-discription{
+        padding-top: 80px;
+    }
+    .menu__btn{
+        display: flex;
+    }
     .nav-wrap{
         display: none;
     }
