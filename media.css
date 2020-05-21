@@ -17,6 +17,31 @@
     .nav-wrap{
         display: none;
     }
+    .new-items{
+        flex-direction: column;
+        align-items: center;
+    }
+    .new-items-card{
+        height: 300px;
+        margin-bottom: 20px;
+    }
+    .new-items-card img{
+        height: 150px;
+        width: auto;
+    }
+    .new-items-card:nth-last-child(1){
+        display: none;
+    }
+    .abous-us-row{
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+    .abous-us-row p{
+        width: 100%;
+    }
+    .offers-paragraph{
+        padding-left: 0px;
+    }
 }
 @media(max-width:550px){
     .header-discription{
@@ -25,5 +50,9 @@
     .catalog-card{
         width: 100%;
         height: 200px;
+    }
+    .offers__header{
+        margin-top: 0;
+        text-align: left;
     }
 }
