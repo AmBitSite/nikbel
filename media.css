@@ -51,7 +51,7 @@
 }
 @media(max-width:550px){
     .header-discription{
-        font-size: 14px;
+        font-size: 11px;
     }
     .catalog-card{
         width: 100%;
@@ -60,5 +60,8 @@
     .offers__header{
         margin-top: 0;
         text-align: left;
+    }
+    .about-us-paragraph{
+        width: 300px;
     }
 }
