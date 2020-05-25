@@ -64,4 +64,13 @@
     .about-us-paragraph{
         width: 300px;
     }
+    .filters{
+        padding:20px 0;
+        font-size: 16px;
+    }
+    .filters-item{
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
 }
