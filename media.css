@@ -78,6 +78,7 @@
     }
     .new-items-card{
         width:290px;
+        box-sizing: border-box;
     }
     .new-items {
         width: 100%;
