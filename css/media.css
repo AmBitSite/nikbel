@@ -100,4 +100,18 @@
         width: 290px!important;
         height: auto;
     }
+    .gallery-block-img{
+        justify-content: center;
+    }
+    .gallery-block-img__item{
+        width: 290px;
+        height: 290px;
+        box-sizing: border-box;
+        margin-right: 0;
+    }
+    .gallery-block-img__item img{
+        width: 290px!important;
+        height: 290px;
+        box-sizing: border-box;
+    }
 }

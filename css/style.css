@@ -132,7 +132,7 @@ a:hover {
 .header-search-btn {
     position: absolute;
     right: 2%;
-    top: 17%;
+    top: 10%;
     width: 25px;
     height: 25px;
     background-image: url('../img/search-icon.png');
@@ -140,6 +140,7 @@ a:hover {
     border: none;
     outline: none;
     transition: .3s;
+    cursor: pointer;
 }
 
 .header-search-btn:active {
@@ -582,4 +583,34 @@ a:hover {
 }
 .description__order:hover{
     color: #333;
+}
+
+/* ***************************gallery **********************************/
+
+.section-gallery-block{
+    margin-bottom: 60px;
+    margin-top: 60px;
+}
+.gallery__header{
+    display: block;
+    width: 100%;
+}
+.gallery-block-img{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.gallery-block-img__item{
+    margin-right: 25px;
+    display: inline-block;
+    width: 300px;
+    margin-bottom: 25px;
+}
+gallery-block-img__item:nth-child(4n+4){
+    margin-right: 0px;
+}
+.gallery-block-img__item img{
+    width: 300px!important;
+    height: 300px;
+
 }
