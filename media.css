@@ -73,4 +73,10 @@
         margin-left: 0;
         margin-bottom: 10px;
     }
+    .items-block .new-items-card{
+        margin-right: 0px;
+    }
+    .new-items-card{
+        width: 100%;
+    }
 }
