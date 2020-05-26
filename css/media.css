@@ -14,7 +14,7 @@
     }
 }
 @media(max-width:850px){
-    .header-discription{
+    .header-description{
         padding-top: 80px;
     }
     .menu__btn{
@@ -48,9 +48,18 @@
     .offers-paragraph{
         padding-left: 0px;
     }
+    .product-block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .portfolio-block-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
 }
 @media(max-width:550px){
-    .header-discription{
+    .header-description{
         font-size: 11px;
     }
     .catalog-card{
@@ -82,5 +91,13 @@
     }
     .new-items {
         width: 100%;
+    }
+    .portfolio-block-img__item{
+        width: 290px;
+        height: auto;
+    }
+    .portfolio-block-img__item img{
+        width: 290px!important;
+        height: auto;
     }
 }
