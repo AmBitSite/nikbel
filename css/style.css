@@ -10,6 +10,7 @@ body {
 a {
     text-decoration: none;
     transition: .3s;
+    color: inherit;
 }
 
 .nav {
