@@ -42,3 +42,40 @@ $(document).ready(function () {
         $('body,html').animate({ scrollTop: top }, 500);
     });
 });
+
+
+
+var searchInput = document.querySelector('.header-search-input')
+function showListSearchItems(arr){
+    var listWrap = document.createElement('div')
+    listWrap.classList.add('search-wrap')
+    searchInput.after(listWrap)
+    for(var countRes = 0;countRes<arr.length;countRes++){
+        var listItem = document.createElement('a')
+        listItem.classList.add('search-wrap__item')
+        // + arr[countRes].c_slug + arr[countRes].sc_slug + arr[countRes].p_slug
+        listItem.setAttribute('href', arr[countRes].html_url)
+        listItem.innerText = arr[countRes].author.login
+        listWrap.appendChild(listItem)
+        
+    }
+    
+}
+
+searchInput.addEventListener('keyup', function(){
+var url = `https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits`
+var promise = fetch(url)
+    .then(res=>res.json())
+    .then(res=>{
+        document.querySelector('.header-search-btn').classList.add('header-search-btn_active')
+        if(document.querySelector('.search-wrap'))document.querySelector('.search-wrap').remove()
+        showListSearchItems(res)
+    })
+})
+document.querySelector('.header-search-btn').addEventListener('click', function(){
+    searchInput.value=''
+    if(document.querySelector('.search-wrap'))document.querySelector('.search-wrap').remove()
+    if(document.querySelector('.header-search-btn_active')){
+        document.querySelector('.header-search-btn_active').classList.remove('header-search-btn_active')
+    }
+})
